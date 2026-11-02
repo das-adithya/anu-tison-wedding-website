@@ -1,0 +1,983 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#F8F0E8" />
+    <meta
+      name="description"
+      content="A traditional Christian Maduram Veppu invitation for Anu Paily and Tison Titus on 17 January 2027 in Vattayi, Thrissur, Kerala."
+    />
+    <meta
+      property="og:title"
+      content="Anu Paily & Tison Titus | Maduram Veppu"
+    />
+    <meta
+      property="og:description"
+      content="With grateful hearts, we invite you to celebrate our Maduram Veppu on 17 January 2027 at 7:00 PM."
+    />
+    <meta property="og:type" content="website" />
+    <title>Anu Paily &amp; Tison Titus | Maduram Veppu</title>
+    <style>
+      :root {
+        --cream: #f8f0e8;
+        --paper: #fffcf9;
+        --gold: #c5a15d;
+        --gold-light: #e3cfa8;
+        --ink: #49343a;
+        --muted: #78636a;
+        --rose: #a85f65;
+        --line: #e8d5d8;
+        --shadow: 0 18px 60px #57401b12;
+      }
+      * {
+        box-sizing: border-box;
+      }
+      html {
+        scroll-behavior: smooth;
+      }
+      body {
+        margin: 0;
+        background: var(--cream);
+        color: var(--ink);
+        font-family: Georgia, "Times New Roman", serif;
+        line-height: 1.7;
+        overflow-wrap: break-word;
+      }
+      a {
+        color: inherit;
+      }
+      .wrap {
+        width: min(100% - 36px, 1000px);
+        margin: auto;
+      }
+      .hero {
+        min-height: 100svh;
+        display: grid;
+        align-items: center;
+        padding: 36px 0;
+        position: relative;
+        isolation: isolate;
+        overflow: hidden;
+        background: radial-gradient(
+          ellipse at 75% 15%,
+          #fffcf9 0%,
+          #f9e5e7 50%,
+          #f4e8e1 100%
+        );
+      }
+      .hero:before,
+      .hero:after {
+        content: "✿";
+        position: absolute;
+        z-index: -1;
+        color: #a85f6522;
+        font-size: clamp(130px, 24vw, 280px);
+        line-height: 1;
+        pointer-events: none;
+        animation: floral-drift 12s ease-in-out infinite alternate;
+      }
+      .hero:before {
+        left: -55px;
+        top: -45px;
+        transform: rotate(-24deg);
+      }
+      .hero:after {
+        right: -65px;
+        bottom: -50px;
+        transform: rotate(18deg);
+        animation-delay: -5s;
+      }
+      .hero-grid {
+        display: grid;
+        grid-template-columns: 1.05fr 0.95fr;
+        align-items: center;
+        gap: clamp(28px, 5vw, 68px);
+        position: relative;
+        z-index: 2;
+      }
+      .sparkle-layer {
+        position: absolute;
+        inset: 0;
+        pointer-events: none;
+        overflow: hidden;
+        z-index: 1;
+      }
+      .sparkle {
+        position: absolute;
+        left: var(--x);
+        top: var(--y);
+        width: var(--size);
+        height: var(--size);
+        color: #c5a15d;
+        opacity: 0;
+        animation: sparkle-twinkle var(--duration) ease-in-out var(--delay)
+          infinite;
+      }
+      .sparkle:before {
+        content: "✧";
+        font-size: var(--size);
+        line-height: 1;
+      }
+      .petal-layer {
+        position: absolute;
+        inset: 0;
+        overflow: hidden;
+        pointer-events: none;
+        z-index: 1;
+      }
+      .petal {
+        position: absolute;
+        top: -12%;
+        left: var(--left);
+        width: var(--size);
+        height: calc(var(--size) * 1.35);
+        border-radius: 90% 10% 80% 20%;
+        background: linear-gradient(
+          145deg,
+          #fff5f4 0%,
+          #e9aeb7 72%,
+          #c97886 100%
+        );
+        opacity: var(--opacity);
+        box-shadow: 0 2px 7px #a85f6512;
+        transform: rotate(var(--turn));
+        animation: petal-fall var(--duration) linear var(--delay) infinite;
+      }
+      .petal:nth-child(3n) {
+        border-radius: 75% 25% 70% 30%;
+        background: linear-gradient(145deg, #fffaf1, #e7c9a1);
+      }
+      .petal:nth-child(4n) {
+        width: calc(var(--size) * 0.72);
+        height: calc(var(--size) * 1.05);
+        opacity: calc(var(--opacity) * 0.8);
+      }
+      @keyframes petal-fall {
+        0% {
+          transform: translate3d(0, -8vh, 0) rotate(var(--turn));
+        }
+        25% {
+          transform: translate3d(22px, 27vh, 0)
+            rotate(calc(var(--turn) + 100deg));
+        }
+        50% {
+          transform: translate3d(-18px, 54vh, 0)
+            rotate(calc(var(--turn) + 220deg));
+        }
+        75% {
+          transform: translate3d(26px, 80vh, 0)
+            rotate(calc(var(--turn) + 310deg));
+        }
+        100% {
+          transform: translate3d(-10px, 115vh, 0)
+            rotate(calc(var(--turn) + 420deg));
+        }
+      }
+      @keyframes floral-drift {
+        from {
+          translate: 0 0;
+        }
+        to {
+          translate: 8px 14px;
+        }
+      }
+      @keyframes gold-sweep {
+        0%,
+        72%,
+        100% {
+          background-position: 100% 50%;
+        }
+        35% {
+          background-position: 0% 50%;
+        }
+      }
+      @keyframes sparkle-twinkle {
+        0%,
+        100% {
+          opacity: 0;
+          transform: scale(0.45) rotate(0deg);
+        }
+        45% {
+          opacity: 0.72;
+          transform: scale(1) rotate(45deg);
+        }
+      }
+      @keyframes photo-arrive {
+        from {
+          opacity: 0;
+          transform: translateY(28px) scale(0.975);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0) scale(1);
+        }
+      }
+      @keyframes invitation-arrive {
+        from {
+          opacity: 0;
+          transform: translateY(22px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+      @keyframes frame-glow {
+        0%,
+        100% {
+          box-shadow: 0 0 0 0 #c5a15d00;
+        }
+        50% {
+          box-shadow: 0 0 18px 2px #c5a15d2b;
+        }
+      }
+      @keyframes shimmer {
+        0%,
+        100% {
+          opacity: 0.78;
+          text-shadow: 0 0 0 #c5a15d00;
+        }
+        50% {
+          opacity: 1;
+          text-shadow: 0 0 12px #c5a15d55;
+        }
+      }
+      @keyframes cross-glow {
+        0%,
+        100% {
+          text-shadow: 0 0 0 #c5a15d00;
+        }
+        50% {
+          text-shadow: 0 0 15px #c5a15d55;
+        }
+      }
+      .photo-frame {
+        padding: 10px;
+        border: 1px solid var(--gold-light);
+        border-radius: 48% 48% 18px 18px;
+        background: #f9e5e7;
+        box-shadow: var(--shadow);
+        max-width: 480px;
+        margin: auto;
+        position: relative;
+        animation: photo-arrive 1.15s cubic-bezier(0.2, 0.75, 0.25, 1) both;
+      }
+      .photo-frame:before {
+        content: "";
+        position: absolute;
+        inset: -7px;
+        border: 1px solid #c5a15d55;
+        border-radius: inherit;
+        pointer-events: none;
+        animation: frame-glow 4.5s ease-in-out 1.2s infinite;
+      }
+      .photo-frame:after {
+        content: "";
+        position: absolute;
+        inset: 18px;
+        border: 1px solid #fff8e5aa;
+        border-radius: inherit;
+        pointer-events: none;
+      }
+      .couple-photo {
+        display: block;
+        width: 100%;
+        height: min(68vh, 650px);
+        min-height: 420px;
+        object-fit: cover;
+        object-position: 48% 35%;
+        filter: sepia(6%) saturate(92%) brightness(103%) contrast(98%);
+        border-radius: 48% 48% 12px 12px;
+        transition:
+          transform 0.8s cubic-bezier(0.2, 0.7, 0.2, 1),
+          filter 0.8s ease;
+      }
+      .photo-frame:hover .couple-photo {
+        transform: scale(1.025);
+        filter: sepia(4%) saturate(96%) brightness(104%) contrast(99%);
+      }
+      .invitation {
+        text-align: center;
+        padding: 28px 0;
+        animation: invitation-arrive 1s 0.18s cubic-bezier(0.2, 0.75, 0.25, 1)
+          both;
+      }
+      .eyebrow {
+        font:
+          11px Arial,
+          sans-serif;
+        letter-spacing: 0.25em;
+        text-transform: uppercase;
+        color: var(--rose);
+      }
+      .cross {
+        font-size: 34px;
+        color: var(--gold);
+        margin: 15px 0 0;
+        animation: cross-glow 4s ease-in-out infinite;
+      }
+      .sprig {
+        color: var(--gold);
+        letter-spacing: 0.3em;
+        font-size: 20px;
+        animation: shimmer 5s ease-in-out infinite;
+      }
+      .names {
+        font-size: clamp(40px, 5vw, 67px);
+        line-height: 1.12;
+        font-weight: normal;
+        margin: 12px 0;
+        color: var(--rose);
+        text-wrap: balance;
+        animation: name-sweep 9s ease-in-out 2s infinite;
+        background: linear-gradient(
+          110deg,
+          #a85f65 0%,
+          #a85f65 42%,
+          #d8b96f 49%,
+          #fff8e9 51%,
+          #a85f65 59%,
+          #a85f65 100%
+        );
+        background-size: 240% 100%;
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+      @keyframes name-sweep {
+        0%,
+        72%,
+        100% {
+          background-position: 100% 50%;
+        }
+        35% {
+          background-position: 0% 50%;
+        }
+      }
+      .amp {
+        display: block;
+        font-style: italic;
+        color: var(--gold);
+        font-size: 0.62em;
+        margin: 5px;
+      }
+      .intro {
+        max-width: 440px;
+        margin: 18px auto;
+        color: var(--muted);
+        font-size: 17px;
+      }
+      .date-line {
+        margin: 22px 0 4px;
+        font:
+          12px Arial,
+          sans-serif;
+        letter-spacing: 0.18em;
+        text-transform: uppercase;
+        color: var(--rose);
+      }
+      .time {
+        color: var(--rose);
+        font-size: 18px;
+      }
+      .button {
+        display: inline-block;
+        text-decoration: none;
+        border: 1px solid var(--gold);
+        border-radius: 30px;
+        padding: 11px 20px;
+        font:
+          11px Arial,
+          sans-serif;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+        transition:
+          transform 0.25s ease,
+          box-shadow 0.25s ease,
+          background-color 0.25s ease;
+        margin: 8px 5px;
+        cursor: pointer;
+        background: transparent;
+        color: var(--ink);
+      }
+      .button.primary {
+        background: var(--rose);
+        color: #fff;
+        border-color: var(--rose);
+      }
+      .button:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 8px 22px #4b3b2020;
+      }
+      .button:active {
+        transform: translateY(-1px) scale(0.99);
+      }
+      .button:focus-visible,
+      a:focus-visible {
+        outline: 3px solid #c5a15d88;
+        outline-offset: 4px;
+      }
+      .section {
+        padding: 76px 0;
+        text-align: center;
+      }
+      .section.alt {
+        background: #f9e5e7;
+      }
+      .section h2 {
+        font-size: clamp(30px, 5vw, 44px);
+        font-weight: normal;
+        color: var(--rose);
+        margin: 8px 0 12px;
+        text-wrap: balance;
+      }
+      .section p {
+        max-width: 680px;
+        margin: 12px auto;
+        color: var(--muted);
+        padding: 0 8px;
+      }
+      .ornament {
+        color: var(--gold);
+        font-size: 24px;
+        letter-spacing: 0.28em;
+      }
+      .countdown {
+        display: flex;
+        justify-content: center;
+        gap: 12px;
+        flex-wrap: wrap;
+        margin: 28px auto;
+      }
+      .unit {
+        min-width: 86px;
+        padding: 16px 12px;
+        border: 1px solid var(--line);
+        border-radius: 14px;
+        background: var(--paper);
+        box-shadow: var(--shadow);
+        transition:
+          transform 0.3s ease,
+          box-shadow 0.3s ease;
+      }
+      .unit:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 20px 45px #57401b18;
+      }
+      .unit strong {
+        display: block;
+        font-size: clamp(28px, 5vw, 38px);
+        font-weight: normal;
+        color: var(--rose);
+        line-height: 1.2;
+        font-variant-numeric: tabular-nums;
+      }
+      .unit span {
+        font:
+          10px Arial,
+          sans-serif;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+        color: var(--muted);
+      }
+      .event-card {
+        max-width: 680px;
+        margin: 28px auto 0;
+        padding: 32px 26px;
+        background: var(--paper);
+        border: 1px solid var(--line);
+        border-radius: 20px;
+        box-shadow: var(--shadow);
+        transition:
+          transform 0.35s ease,
+          box-shadow 0.35s ease;
+      }
+      .event-card:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 24px 65px #57401b18;
+      }
+      .event-card h3 {
+        font-weight: normal;
+        font-size: 27px;
+        color: var(--rose);
+        margin: 8px 0;
+        text-wrap: balance;
+      }
+      .event-time {
+        font-size: 23px;
+        color: var(--rose);
+      }
+      .address {
+        font-size: 16px;
+      }
+      .small {
+        font:
+          11px Arial,
+          sans-serif;
+        letter-spacing: 0.14em;
+        text-transform: uppercase;
+        color: var(--rose);
+      }
+      .family-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 16px;
+        max-width: 720px;
+        margin: 28px auto;
+      }
+      .family {
+        border: 1px solid var(--line);
+        background: var(--paper);
+        padding: 22px;
+        border-radius: 16px;
+        transition:
+          transform 0.3s ease,
+          box-shadow 0.3s ease;
+      }
+      .family:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 15px 35px #57401b12;
+      }
+      .family h3 {
+        font-weight: normal;
+        color: var(--rose);
+        margin: 0 0 8px;
+      }
+      .family p {
+        margin: 4px auto;
+      }
+      .note {
+        font-size: 13px !important;
+      }
+      .footer {
+        padding: 42px 16px;
+        text-align: center;
+        background: #f4e8e1;
+      }
+      .footer .names-small {
+        font-size: 34px;
+        color: var(--rose);
+        margin: 8px 0;
+      }
+      .smallprint {
+        font:
+          11px Arial,
+          sans-serif;
+        color: #78636a;
+        margin-top: 18px;
+      }
+      .fade {
+        opacity: 0;
+        transform: translateY(22px);
+        transition:
+          opacity 0.85s ease,
+          transform 0.85s cubic-bezier(0.2, 0.7, 0.2, 1);
+      }
+      .fade.visible {
+        opacity: 1;
+        transform: none;
+      }
+      .actions {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 6px;
+        margin-top: 22px;
+      }
+      @media (max-width: 720px) {
+        .hero {
+          padding: 30px 0 42px;
+        }
+        .hero-grid {
+          grid-template-columns: 1fr;
+          gap: 12px;
+        }
+        .photo-frame {
+          max-width: 330px;
+          width: min(82%, 330px);
+        }
+        .couple-photo {
+          height: 390px;
+          min-height: 0;
+        }
+        .invitation {
+          padding: 10px 8px;
+        }
+        .names {
+          font-size: clamp(42px, 11vw, 60px);
+        }
+        .intro {
+          font-size: 16px;
+        }
+        .section {
+          padding: 58px 0;
+        }
+        .family-grid {
+          grid-template-columns: 1fr;
+          max-width: 440px;
+        }
+        .unit {
+          min-width: 70px;
+          padding: 13px 10px;
+        }
+      }
+      @media (max-width: 480px) {
+        .wrap {
+          width: min(100% - 26px, 1000px);
+        }
+        .hero {
+          padding: 22px 0 34px;
+        }
+        .photo-frame {
+          width: min(88%, 330px);
+          padding: 7px;
+        }
+        .couple-photo {
+          height: clamp(300px, 94vw, 370px);
+          object-position: 48% 32%;
+        }
+        .names {
+          font-size: clamp(38px, 10.5vw, 48px);
+        }
+        .date-line {
+          font-size: 11px;
+          letter-spacing: 0.12em;
+        }
+        .button {
+          min-height: 44px;
+          padding: 12px 16px;
+          line-height: 1.35;
+        }
+        .actions {
+          gap: 8px;
+        }
+        .actions .button {
+          width: 100%;
+          max-width: 320px;
+          margin: 3px 0;
+        }
+        .countdown {
+          gap: 8px;
+        }
+        .unit {
+          min-width: calc(50% - 8px);
+          padding: 12px 8px;
+        }
+        .event-card {
+          padding: 26px 16px;
+        }
+        .address {
+          overflow-wrap: anywhere;
+        }
+        h1,
+        h2,
+        h3 {
+          text-wrap: balance;
+        }
+        p {
+          line-height: 1.6;
+          letter-spacing: normal;
+        }
+        img {
+          max-width: 100%;
+        }
+      }
+      @media (prefers-reduced-motion: reduce) {
+        html {
+          scroll-behavior: auto;
+        }
+        *,
+        *:before,
+        *:after {
+          animation: none !important;
+          transition: none !important;
+          scroll-behavior: auto !important;
+        }
+        .fade {
+          opacity: 1;
+          transform: none;
+        }
+        .petal-layer,
+        .sparkle-layer {
+          display: none;
+        }
+        .names {
+          background: none;
+          -webkit-text-fill-color: var(--rose);
+          animation: none;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header class="hero" id="top">
+      <div class="petal-layer" id="petalLayer" aria-hidden="true"></div>
+      <div class="sparkle-layer" id="sparkleLayer" aria-hidden="true"></div>
+      <div class="wrap hero-grid">
+        <div class="photo-frame">
+          <img
+            class="couple-photo"
+            src="assets/anu-tison-couple.png"
+            alt="Anu Paily and Tison Titus smiling together"
+            fetchpriority="high"
+          />
+        </div>
+        <div class="invitation">
+          <div class="eyebrow">Together with our families</div>
+          <div class="cross" aria-hidden="true">✝</div>
+          <div class="sprig" aria-hidden="true">❧ ✦ ❧</div>
+          <div class="eyebrow">Joyfully invite you to celebrate</div>
+          <h1 class="names">
+            Anu Paily <span class="amp">and</span> Tison Titus
+          </h1>
+          <div class="eyebrow">Maduram Veppu</div>
+          <p class="intro">
+            With grateful hearts and the blessing of God, we invite you to share
+            in this special family celebration.
+          </p>
+          <div class="date-line">Sunday · 17 January · 2027</div>
+          <div class="time">7:00 PM</div>
+          <a class="button primary" href="#celebration">View invitation ↓</a>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="section fade">
+        <div class="wrap">
+          <div class="ornament" aria-hidden="true">✦ ❧ ✦</div>
+          <div class="eyebrow">A family celebration</div>
+          <h2>With love and blessings</h2>
+          <p>
+            With the love of our families and the grace of God, we warmly invite
+            you to join us for the Maduram Veppu of Anu Paily and Tison Titus.
+          </p>
+          <p>
+            Your presence and blessings will make this occasion even more
+            special.
+          </p>
+        </div>
+      </section>
+      <section class="section alt fade" id="countdown">
+        <div class="wrap">
+          <div class="eyebrow">Counting down to the celebration</div>
+          <h2>We look forward to seeing you</h2>
+          <div class="countdown" aria-label="Countdown to Maduram Veppu">
+            <div class="unit">
+              <strong id="days">--</strong><span>Days</span>
+            </div>
+            <div class="unit">
+              <strong id="hours">--</strong><span>Hours</span>
+            </div>
+            <div class="unit">
+              <strong id="minutes">--</strong><span>Minutes</span>
+            </div>
+            <div class="unit">
+              <strong id="seconds">--</strong><span>Seconds</span>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section fade" id="celebration">
+        <div class="wrap">
+          <div class="eyebrow">Please save the date</div>
+          <h2>Maduram Veppu</h2>
+          <div class="event-card">
+            <div class="sprig" aria-hidden="true">✦ ❧ ✦</div>
+            <div class="small">Sunday, 17 January 2027</div>
+            <h3>Anu Paily &amp; Tison Titus</h3>
+            <div class="event-time">7:00 PM</div>
+            <p class="address">
+              Vattayi, Avalumthadathil,<br />Kundukad P.O., Vattayi,<br />Thrissur,
+              Kerala
+            </p>
+            <p class="note">
+              The map pin is at Vattayi Waterfalls, approximately a 5-minute
+              walk from the venue.
+            </p>
+            <a
+              class="button primary"
+              href="https://www.google.com/maps/place/Vattayi+Waterfalls/@10.6010753,76.2621278,17z/data=!3m1!4b1!4m6!3m5!1s0x3ba7e8a4228dff79:0x7f7ef2decc3e59c1!8m2!3d10.60107!4d76.2647027!16s%2Fg%2F11f125x_ys"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Open map pin ↗</a
+            >
+          </div>
+        </div>
+      </section>
+      <section class="section alt fade">
+        <div class="wrap">
+          <div class="ornament" aria-hidden="true">♡</div>
+          <h2>With our families</h2>
+          <div class="family-grid">
+            <div class="family">
+              <h3>Bride's family</h3>
+              <p>A. U. Paily &amp; Mini Paily</p>
+              <p class="note">Eldhose Paily · Sonu Eldhose</p>
+            </div>
+            <div class="family">
+              <h3>Groom's family</h3>
+              <p>Titus Nazrath &amp; Sujatha Titus</p>
+              <p class="note">Teny Titus</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section fade">
+        <div class="wrap">
+          <div class="ornament" aria-hidden="true">✦</div>
+          <h2>Your presence is a blessing</h2>
+          <p>
+            We look forward to celebrating this joyful occasion with you. Thank
+            you for being part of our lives and our story.
+          </p>
+          <div class="actions">
+            <a
+              class="button primary"
+              href="https://wa.me/918714772330?text=Hello%20Anu%20and%20Tison%2C%20I%20would%20like%20to%20confirm%20my%20attendance%20for%20the%20Maduram%20Veppu%20on%2017%20January%202027."
+              target="_blank"
+              rel="noopener noreferrer"
+              >RSVP on WhatsApp</a
+            ><button class="button" id="shareButton" type="button">
+              Share invitation</button
+            ><a
+              class="button"
+              id="calendarButton"
+              href="https://calendar.google.com/calendar/render?action=TEMPLATE&amp;text=Maduram%20Veppu%20%E2%80%94%20Anu%20Paily%20%26%20Tison%20Titus&amp;dates=20270117%2F20270118&amp;details=Maduram%20Veppu%20celebration%20for%20Anu%20Paily%20and%20Tison%20Titus.%20The%20map%20pin%20is%20at%20Vattayi%20Waterfalls%2C%20about%205%20minutes%20walk%20from%20the%20venue.&amp;location=Vattayi%2C%20Avalumthadathil%2C%20Kundukad%20P.O.%2C%20Thrissur%2C%20Kerala"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Add to Google Calendar</a
+            >
+          </div>
+          <p id="shareStatus" class="note" role="status" aria-live="polite"></p>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="eyebrow">With love and blessings</div>
+      <div class="names-small">Anu Paily &amp; Tison Titus</div>
+      <div>17 · 01 · 2027 &nbsp; | &nbsp; Thrissur, Kerala</div>
+      <div class="smallprint">A family celebration · Made with love</div>
+    </footer>
+    <script>
+      // Event time is local to Kerala (IST, UTC+05:30).
+      const eventDate = new Date("2027-01-17T19:00:00+05:30");
+      function updateCountdown() {
+        let diff = Math.max(0, eventDate - new Date());
+        const d = Math.floor(diff / 86400000);
+        diff %= 86400000;
+        const h = Math.floor(diff / 3600000);
+        diff %= 3600000;
+        const m = Math.floor(diff / 60000);
+        const s = Math.floor((diff % 60000) / 1000);
+        document.getElementById("days").textContent = d;
+        document.getElementById("hours").textContent = String(h).padStart(
+          2,
+          "0",
+        );
+        document.getElementById("minutes").textContent = String(m).padStart(
+          2,
+          "0",
+        );
+        document.getElementById("seconds").textContent = String(s).padStart(
+          2,
+          "0",
+        );
+      }
+      updateCountdown();
+      setInterval(updateCountdown, 1000);
+      const reduceMotion = window.matchMedia(
+        "(prefers-reduced-motion: reduce)",
+      ).matches;
+      if (!reduceMotion && "IntersectionObserver" in window) {
+        const observer = new IntersectionObserver(
+          (entries) =>
+            entries.forEach((entry) => {
+              if (entry.isIntersecting) {
+                entry.target.classList.add("visible");
+                observer.unobserve(entry.target);
+              }
+            }),
+          { threshold: 0.12 },
+        );
+        document
+          .querySelectorAll(".fade")
+          .forEach((el) => observer.observe(el));
+      } else {
+        document
+          .querySelectorAll(".fade")
+          .forEach((el) => el.classList.add("visible"));
+      }
+      // Lightweight decorative animations: fewer elements on phones.
+      if (!reduceMotion) {
+        const isSmallScreen = window.matchMedia("(max-width:600px)").matches;
+        const petalLayer = document.getElementById("petalLayer");
+        if (petalLayer) {
+          const count = isSmallScreen ? 7 : 12;
+          for (let i = 0; i < count; i++) {
+            const petal = document.createElement("span");
+            petal.className = "petal";
+            petal.style.setProperty("--left", `${Math.random() * 100}%`);
+            petal.style.setProperty("--size", `${7 + Math.random() * 8}px`);
+            petal.style.setProperty(
+              "--opacity",
+              `${0.22 + Math.random() * 0.28}`,
+            );
+            petal.style.setProperty(
+              "--duration",
+              `${15 + Math.random() * 12}s`,
+            );
+            petal.style.setProperty("--delay", `${-Math.random() * 24}s`);
+            petal.style.setProperty("--turn", `${Math.random() * 160}deg`);
+            petalLayer.appendChild(petal);
+          }
+        }
+        const sparkleLayer = document.getElementById("sparkleLayer");
+        if (sparkleLayer) {
+          const count = isSmallScreen ? 4 : 7;
+          for (let i = 0; i < count; i++) {
+            const sparkle = document.createElement("span");
+            sparkle.className = "sparkle";
+            sparkle.style.setProperty("--x", `${8 + Math.random() * 84}%`);
+            sparkle.style.setProperty("--y", `${10 + Math.random() * 78}%`);
+            sparkle.style.setProperty("--size", `${9 + Math.random() * 7}px`);
+            sparkle.style.setProperty(
+              "--duration",
+              `${4 + Math.random() * 3}s`,
+            );
+            sparkle.style.setProperty("--delay", `${-Math.random() * 6}s`);
+            sparkleLayer.appendChild(sparkle);
+          }
+        }
+      }
+      document
+        .getElementById("shareButton")
+        .addEventListener("click", async () => {
+          const status = document.getElementById("shareStatus");
+          const shareData = {
+            title: "Anu Paily & Tison Titus — Maduram Veppu",
+            text: "You are warmly invited to the Maduram Veppu of Anu Paily and Tison Titus on 17 January 2027 at 7:00 PM in Vattayi, Thrissur.",
+            url: location.href,
+          };
+          if (navigator.share) {
+            try {
+              await navigator.share(shareData);
+            } catch (e) {
+              if (e.name !== "AbortError")
+                status.textContent =
+                  "Sharing was unavailable. You can copy the website link from your browser.";
+            }
+          } else {
+            try {
+              await navigator.clipboard.writeText(location.href);
+              status.textContent =
+                "Invitation link copied. Share it with family and friends.";
+            } catch (e) {
+              status.textContent =
+                "Copy the website address from your browser to share the invitation.";
+            }
+          }
+        });
+    </script>
+  </body>
+</html>
